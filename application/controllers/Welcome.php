@@ -20,6 +20,18 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('index');
+		echo anchor('Welcome/test1',"Link test1");
 	}
+	public function test1()
+	{
+		//$this->load->view('test1');
+		echo anchor('Welcome/test2',"Link test2");
+	}
+	public function test2()
+	{
+		//$this->load->view('test2');
+		echo anchor('Welcome/index',"Link index");
+	}
+
 }
