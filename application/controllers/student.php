@@ -26,4 +26,12 @@ class student extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+	public function index2()
+	{
+		$this->load->view('index');
+	}
+	public function index3()
+	{
+		$this->load->view('index');
+	}
 }
