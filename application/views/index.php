@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Hound I Fast build Admin dashboard for any platform</title>
+  <title>LOGIN</title>
   <meta name="description" content="Hound is a Dashboard & Admin Site Responsive Template by hencework." />
   <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Hound Admin, Houndadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
   <meta name="author" content="hencework"/>
@@ -13,12 +13,12 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   
   <!-- vector map CSS -->
-  <link href="<?php echo base_url(); ?>vendors/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="<?php echo site_url(); ?>/assets/vendors/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css"/>
   
   
   
   <!-- Custom CSS -->
-  <link href="<?php echo base_url(); ?>dist/css/style.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo site_url(); ?>/assets/dist/css/style.css" rel="stylesheet" type="text/css">
 
 
 
@@ -67,7 +67,7 @@
              <div class="clearfix"></div>
             </div>
             <div class="form-group text-center">
-             <button type="submit" class="btn  btn-success btn-outline btn-rounded">Success</button>
+             <button type="submit" class="btn  btn-success btn-outline btn-rounded" name="submit">Success</button>
             </div>
            </form>
           </div>
@@ -88,16 +88,16 @@
   <!-- JavaScript -->
   
   <!-- jQuery -->
-  <script src="<?php echo base_url(); ?>vendors/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="<?php echo site_url(); ?>/assets/vendors/bower_components/jquery/dist/jquery.min.js"></script>
   
   <!-- Bootstrap Core JavaScript -->
-  <script src="<?php echo base_url(); ?>vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="<?php echo base_url(); ?>vendors/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+  <script src="<?php echo site_url(); ?>/assets/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="<?php echo site_url(); ?>/assets/vendors/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
   
   <!-- Slimscroll JavaScript -->
-  <script src="<?php echo base_url(); ?>dist/js/jquery.slimscroll.js"></script>
+  <script src="<?php echo site_url(); ?>/assets/dist/js/jquery.slimscroll.js"></script>
   
   <!-- Init JavaScript -->
-  <script src="<?php echo base_url(); ?>dist/js/init.js"></script>
+  <script src="<?php echo site_url(); ?>/assets/dist/js/init.js"></script>
  </body>
 </html>
