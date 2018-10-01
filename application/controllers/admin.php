@@ -8,7 +8,7 @@ public function __construct()
 }
 
 
-	public function Dashboard(){ 
+	public function Main(){ 
 		$this->load->view('admin/index');
 	}
 	public function Report(){ 
@@ -21,11 +21,25 @@ public function __construct()
 		$this->load->view('admin/Act2');
 	}
 	public function Mydata(){ 
-		$this->load->view('admin/Mydata');
+    $id=$this->session->userdata('a_id');
+
+	    $sql = "SELECT * FROM admin WHERE a_id = '$id'";
+		$rs= $this->db->query($sql);
+		$data['rs']= $rs->result_array();
+		$this->load->view('admin/Mydata',$data);
+	}
+
+	public function Edit_Pass($id){ 
+    
+	    $sql = "SELECT * FROM admin WHERE a_id = '$id'";
+		$rs= $this->db->query($sql);
+		$data['rs']= $rs->result_array();
+		$this->load->view('admin/Edit_Pass',$data);
 	}
 	public function LogOut(){ 
 		$this->load->view('admin/LogOut');
 	}
+	
 	
 
 	public function showActivity(){ 

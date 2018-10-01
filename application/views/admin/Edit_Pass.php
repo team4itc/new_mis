@@ -47,7 +47,7 @@ include "top.php";
                             <td><?php echo $r['a_lname'];?></td>
                           </tr>
                          <?php
-  						echo anchor('welcome/Edit_Pass/'.$r['a_id'],"เปลี่ยนรหัสผ่าน");
+  						echo anchor('admin/Edit_Pass/'.$r['a_id'],"เปลี่ยนรหัสผ่าน");
                        }
                          ?>
                           
