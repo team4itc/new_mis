@@ -70,7 +70,7 @@ public function edit($id) //method หรือ  function ชื่อว่า 
 			//row_array คือ การดึงค่าจาก field field เดียว เหมาะสำหรับ การเรียงข้อมูลเพียงแค่แถวเดียว จะ แตกต่างจาก  result_array
 			$data['rs']=$rs->row_array();
 		}
-		$this->load->view("edit",$data);
+		$this->load->view("header/manage/",$data);
 	}
 
 
