@@ -36,6 +36,7 @@ include "top.php";
                           <tr>
                             <th>ชื่อจริง</th>
                             <th>นามสกุล</th>
+                            <th></th>
                           </tr>
                         </thead> 
                         <tbody>
@@ -45,9 +46,10 @@ include "top.php";
                           <tr>
                             <td><?php echo $r['a_fname']; ?></td>
                             <td><?php echo $r['a_lname'];?></td>
+                            <td><?php ?></td>
                           </tr>
                          <?php
-  						echo anchor('welcome/Edit_Pass/'.$r['a_id'],"เปลี่ยนรหัสผ่าน");
+  						echo anchor('welcome/Edit_Pass/'.$r['a_id'],"ChangePassword");
                        }
                          ?>
                           

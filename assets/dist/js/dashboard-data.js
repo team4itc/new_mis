@@ -295,11 +295,12 @@ $(document).ready(function(){
 /*****Ready function end*****/
 
 /*****Load function start*****/
+/*
 $(window).load(function(){
 	window.setTimeout(function(){
 		$.toast({
 			heading: 'Welcome to Hound',
-			text: 'Use the predefined ones, or specify a custom position object.',
+			text: 'test.',
 			position: 'top-right',
 			loaderBg:'#fec107',
 			icon: 'success',
@@ -307,7 +308,7 @@ $(window).load(function(){
 			stack: 6
 		});
 	}, 3000);
-});
+});*/
 /*****Load function* end*****/
 
 var sparklineLogin = function() { 

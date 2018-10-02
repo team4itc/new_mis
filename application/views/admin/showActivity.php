@@ -46,7 +46,7 @@ INDEX
                             ?>
                           <tr>
                             <td><?php echo $r['act_id']; ?></td>
-                            <td><?php echo $r['act_name'];?></td>
+                            <td><?php echo $r['type'];?></td>
                           </tr>
                          <?php
                        }

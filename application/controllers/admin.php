@@ -21,7 +21,7 @@ public function __construct()
 		$this->load->view('admin/Act2');
 	}
 	public function Mydata(){ 
-    $id=$this->session->userdata('a_id');
+    $id=$this->session->userdata('id');
 
 	    $sql = "SELECT * FROM admin WHERE a_id = '$id'";
 		$rs= $this->db->query($sql);
@@ -43,7 +43,7 @@ public function __construct()
 	
 
 	public function showActivity(){ 
-		$sql="SELECT * FROM activity";
+		$sql="SELECT * FROM activity WHERE type = 'กิจกรรมเข้าแถว'";
 		$rs= $this->db->query($sql);
 		$data['rs']= $rs->result_array();
 		$this->load->view('admin/showActivity',$data);
