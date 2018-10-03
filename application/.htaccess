@@ -1,9 +1,0 @@
-RewriteEngine On
-<<<<<<< HEAD
-RewriteBase /mis
-=======
-RewriteBase /mis-act
->>>>>>> f1e598ca68e04c4fa3ab00fff4476c343d41a73c
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?$1 [L]

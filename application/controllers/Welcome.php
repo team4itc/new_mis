@@ -15,8 +15,8 @@ public function __construct()
 	public function index()
 	{ 
 		$this->load->view('index');
-		$username =  $this->input->post('username');
-		$password =  $this->input->post('password');  
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');  
 		
 		$query_std = $this->db->query("select * from student where code = '$username' and pin_id = '$password'");
 		$chk_std = $query_std->num_rows();
@@ -32,7 +32,7 @@ public function __construct()
 			$this->session->set_userdata($data);
 			}
 
-			redirect("/student/main");
+			redirect("/student/index");
 		}
 
 		$query_prs = $this->db->query("SELECT * from person where username = '$username' and password = '$password'");
@@ -43,8 +43,6 @@ public function __construct()
 			$rs_her= $query_prs->result();
 			$person_id=$rs_her[0]->person_id;
 			
-
-
 			$sql_tcode = ("SELECT * from teacher where teacher_code ='$username'");
 			$show=$this->db->query($sql_tcode);
 			

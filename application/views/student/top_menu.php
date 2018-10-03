@@ -175,44 +175,36 @@
 				<li>
 					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr"><div class="pull-left"><i class="zmdi zmdi-smartphone-setup mr-20"></i><span class="right-nav-text">กิจกรรมเข้าแถว</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="ui_dr" class="collapse collapse-level-1 two-col-list">
+						
 						<li>
-							<a href="<?php echo base_url();?>teacher/checklineup">เช็คชื่อกิจกรรม</a>
-						</li>
-						<li>
-							<a href="<?php echo base_url();?>teacher/concludelineup">ดูผลสรุป</a>
+							<a href="<?php echo base_url();?>student/concludelineup">ดูผลสรุป</a>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="javascript:void(0);" data-toggle="collapse" data-target="#form_dr"><div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span class="right-nav-text">กิจกรรมโฮมรูม</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="form_dr" class="collapse collapse-level-1 two-col-list">
+						
 						<li>
-							<a href="<?php echo base_url();?>teacher/checkhomeroom">เช็คชื่อกิจกรรม</a>
-						</li>
-						<li>
-							<a href="<?php echo base_url();?>teacher/concludehomeroom">ดูผลสรุป</a>
+							<a href="<?php echo base_url();?>student/concludehomeroom">ดูผลสรุป</a>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="javascript:void(0);" data-toggle="collapse" data-target="#chart_dr"><div class="pull-left"><i class="zmdi zmdi-chart-donut mr-20"></i><span class="right-nav-text">กิจกรรมแผนก </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="chart_dr" class="collapse collapse-level-1 two-col-list">
+						
 						<li>
-							<a href="<?php echo base_url();?>teacher/checkdepartment">เช็คชื่อกิจกรรม</a>
-						</li>
-						<li>
-							<a href="<?php echo base_url();?>teacher/concludedepartment">ดูผลสรุป</a>
+							<a href="<?php echo base_url();?>student/concludedepartment">ดูผลสรุป</a>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="javascript:void(0);" data-toggle="collapse" data-target="#table_dr"><div class="pull-left"><i class="zmdi zmdi-format-size mr-20"></i><span class="right-nav-text">กิจกรรมลูกเสือ</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="table_dr" class="collapse collapse-level-1 two-col-list">
+						
 						<li>
-							<a href="<?php echo base_url();?>teacher/checkscout">เช็คชื่อกิจกรรม</a>
-						</li>
-						<li>
-							<a href="<?php echo base_url();?>teacher/concludescout">ดูผลสรุป</a>
+							<a href="<?php echo base_url();?>student/concludescout">ดูผลสรุป</a>
 						</li>
 					</ul>
 				</li>
@@ -220,7 +212,7 @@
 					<a href="javascript:void(0);" data-toggle="collapse" data-target="#icon_dr"><div class="pull-left"><i class="zmdi zmdi-iridescent mr-20"></i><span class="right-nav-text">กิจกรมมพิเศษ</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="icon_dr" class="collapse collapse-level-1">
 						<li>
-							<a href="<?php echo base_url();?>teacher/concludespecial">ดูผลสรุปกิจกรรม</a>
+							<a href="<?php echo base_url();?>student/concludespecial">ดูผลสรุปกิจกรรม</a>
 						</li>
 					</ul>
 				</li>
@@ -238,7 +230,7 @@
 					<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">ข้อมูลส่วนตัว</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="pages_dr" class="collapse collapse-level-1 two-col-list">
 						<li>
-							<a href="<?php echo base_url();?>teacher/profile">Pro file</a>
+							<a href="<?php echo base_url();?>student/profile">Pro file</a>
 						</li>
 						
 					</ul>
