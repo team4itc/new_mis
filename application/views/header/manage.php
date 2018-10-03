@@ -29,6 +29,7 @@
 		 
 	
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/st.css">
+
     
 		
 	<style>
@@ -761,30 +762,59 @@ table th {
 
 
 
-<div class="modal fade" id="type_regist" role="dialog">
-    <div class="modal-dialog modal-md">
-        <div class="modal-content">
-            <form name="type_regist" method="POST" action="">
-				<div class="modal-header">
-					<h4 align="left" class="modal-title">สถานะ</h4>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-				<div class="modal-body">
-                    <div class="form-group">
-                        <select name="type_regist" class="form-control cv_form-control"style="padding:0px;">
-                            <option value="" selected>-- สถานะของคุณ --</option>
-                            <option value="student">นักเรียน / นักศึกษา</option>
-                            <option value="teacher">ครู / บุคลากรวิทยาลัย </option>
-                            <option value="guest">สมากชิกทั่วไป / อื่นๆ </option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                	<div class="col-sm-12" align="center"><button type="submit" name="btn_regist" class="cv_btn btn_ok"><span class="glyphicon glyphicon-ok"></span> เลือก</button></div>
-                </div>
-            </form>
-        </div>
-    </div>
+<div data-modal="trigger-1" class="modal">
+		<button class="close"></button>
+		<header class="modal-header">
+			<h2>This is a modal 1</h2>
+		</header>
+		<div class="content">
+			<p>
+				
+				<input type="text" >
+				
+				Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo 
+				Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+				Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.2/10/25612/10/2561vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+				
+				</p>
+		</div>
+		<footer class="modal-footer">
+			<button class="action">Accept</button>
+			<button class="action">Decline</button>
+		</footer>
+	
+</div>
+
+<div data-modal="trigger-2" class="modal">
+	<article class="content-wrapper">
+		<button class="close"></button>
+		<header class="modal-header">
+			<h2>This is a modal 2</h2>
+		</header>
+		<div class="content">
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</p>
+		</div>
+		<footer class="modal-footer">
+			<button class="action">Accept</button>
+			<button class="action">Decline</button>
+		</footer>
+	</article>
+</div>
+
+<div data-modal="trigger-3" class="modal">
+	<article class="content-wrapper">
+		<button class="close"></button>
+		<header class="modal-header">
+			<h2>This is a modal 3</h2>
+		</header>
+		<div class="content">
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</p>
+		</div>
+		<footer class="modal-footer">
+			<button class="action">Accept</button>
+			<button class="action">Decline</button>
+		</footer>
+	</article>
 </div>
 
 
