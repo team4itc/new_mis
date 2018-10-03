@@ -43,7 +43,7 @@ public function del($act_id) //method หรือ  function ชื่อว่�
 	}
 
 	
-public function edit($id) //method หรือ  function ชื่อว่า  del และรับค่า  $id จาก form
+public function edit($act_id) //method หรือ  function ชื่อว่า  del และรับค่า  $id จาก form
 	{
 		
 		if($this->input->post("save")!= null) //ถ้าข้อมูลที่รับมาจาก form ไม่เท่ากับ ค่าว่าง
@@ -54,14 +54,14 @@ public function edit($id) //method หรือ  function ชื่อว่า 
 			"member_address" => $this->input->post("m_addr")
 			//field ในฐานข้อมูล		 //รับค่าแบบ post  //ตัวแปลจาก form
 		);				//	ชื่อฐานข้อมูล
-		$this->db->where('id', $id);
-		$this->db->update('tb_member', $ins);
+		$this->db->where('act_id', $act_id);
+		$this->db->update('activity', $ins);
 		//ไปยัง conntorller "member"
-		redirect("member/search","refresh");
-		exit();
+		//redirect("member/search","refresh");
+		//exit();
 		}
 
-		$sql = "select * from tb_member where id='$id'";
+		$sql = "select * from activity where act_id='$act_id'";
 		$rs = $this->db->query($sql);
 		//num_row คือ method ใช้ในการนับจำนวนแถวของข้อมลที่เรา  qurey มาว่ามี่ข้อมูลหรือปล่าว
 		if($rs->num_rows()==0){
@@ -70,7 +70,7 @@ public function edit($id) //method หรือ  function ชื่อว่า 
 			//row_array คือ การดึงค่าจาก field field เดียว เหมาะสำหรับ การเรียงข้อมูลเพียงแค่แถวเดียว จะ แตกต่างจาก  result_array
 			$data['rs']=$rs->row_array();
 		}
-		$this->load->view("header/manage/",$data);
+		//$this->load->view("header/manage/",$data);
 	}
 
 

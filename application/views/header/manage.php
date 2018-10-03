@@ -28,10 +28,9 @@
 		<link href="<?php echo base_url();?>assets/dist/css/style.css" rel="stylesheet" type="text/css">
 		 
 	
-		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/css.css">
-
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/st.css">
+    
 		
-
 	<style>
 #child1 {
     position: absolute;
@@ -48,7 +47,7 @@
 	}
 #add {
     position: absolute;
-    top: 80px;
+    top: 45px;
     right: 270px;
 
 	}
@@ -66,6 +65,7 @@
 	width: 50px;
 	border-radius: 50%;
 }
+
 
 body {/*
   font-family: "Open Sans", sans-serif;
@@ -679,11 +679,13 @@ table th {
 </style>
 
 
-<button data-toggle="modal" data-target="#myModal" class="btn btn-circle-lg btn-danger"><span  class="glyphicon glyphicon-plus"></span> </button>
- 
+<div id="add">
+<button data-modal-trigger="trigger-3" class="trigger">
+	<i class="fa fa-fire" aria-hidden="true"></i>
+	เพิ่มกิจกรรม
+</button>
+</div>
 
-
-		
 <center>
 <table width="500">
   <caption>ตารางกิจกรรมแผนก (ตัวแปล)</caption>
@@ -706,7 +708,26 @@ table th {
       <td data-label="ชื่อกิจกรรม"><?php echo $row['act_name']?></td>
       <td data-label="ข้อมูลกิจกรรม"><?php echo $row['date'] ?> </td>
 	  <td data-label="วันที่"><?php echo $row['date']?> </td>
-      <td data-label="จัดการกิจกรรม"><?php echo anchor("header/edit/".$row['act_id'],"<span class='glyphicon glyphicon-pencil'> แก้ไข</span>");?>&nbsp;&nbsp;
+      <td data-label="จัดการกิจกรรม"><?php echo $row['act_id'],"<button data-modal-trigger='trigger-1' class='trigger'>
+		<span class='glyphicon glyphicon-pencil'></span>
+		</button>" ?>
+		<button data-modal-trigger="trigger-2" class="trigger">
+		<span class='glyphicon glyphicon-trash'aria-hidden='true'></span>
+		</button>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<?php echo anchor("header/edit/".$row['act_id'],"<span class='glyphicon glyphicon-pencil'> แก้ไข</span>"); ?>&nbsp;&nbsp;
 	 <?php echo anchor("header/del/".$row['act_id'],"<span class='glyphicon glyphicon-trash'aria-hidden='true'> ลบ</span>",array('onclick'=>"return confirm('คุณต้องการลบข้อมูลหรือไม่?')"));?></td>
     </tr>
 	<?php } ?>
@@ -736,72 +757,34 @@ table th {
 
 	<!------------ /Row ------------------------------------------------------------------------------------------------------------------------------------>
 	<!------------ /Row ------------------------------------------------------------------------------------------------------------------------------------>
-		
-<button data-modal-trigger="trigger-1" class="trigger">
-	<i class="fa fa-fire" aria-hidden="true"></i>
-	Modal 1
-</button>
-<button data-modal-trigger="trigger-2" class="trigger">
-	<i class="fa fa-fire" aria-hidden="true"></i>
-	Modal 2
-</button>
-<button data-modal-trigger="trigger-3" class="trigger">
-	<i class="fa fa-fire" aria-hidden="true"></i>
-	Modal 3
-</button>
+		<!-- Button trigger modal -->
 
-<div data-modal="trigger-1" class="modal">
-	<article class="content-wrapper">
-		<button class="close"></button>
-		<header class="modal-header">
-			<h2>This is a modal 1</h2>
-		</header>
-		<div class="content">
-			<p>
-				
-				<input type="text" >
-				
-				Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-				
-				</p>
-		</div>
-		<footer class="modal-footer">
-			<button class="action">Accept</button>
-			<button class="action">Decline</button>
-		</footer>
-	</article>
-</div>
 
-<div data-modal="trigger-2" class="modal">
-	<article class="content-wrapper">
-		<button class="close"></button>
-		<header class="modal-header">
-			<h2>This is a modal 2</h2>
-		</header>
-		<div class="content">
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</p>
-		</div>
-		<footer class="modal-footer">
-			<button class="action">Accept</button>
-			<button class="action">Decline</button>
-		</footer>
-	</article>
-</div>
 
-<div data-modal="trigger-3" class="modal">
-	<article class="content-wrapper">
-		<button class="close"></button>
-		<header class="modal-header">
-			<h2>This is a modal 3</h2>
-		</header>
-		<div class="content">
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</p>
-		</div>
-		<footer class="modal-footer">
-			<button class="action">Accept</button>
-			<button class="action">Decline</button>
-		</footer>
-	</article>
+<div class="modal fade" id="type_regist" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <form name="type_regist" method="POST" action="">
+				<div class="modal-header">
+					<h4 align="left" class="modal-title">สถานะ</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+                    <div class="form-group">
+                        <select name="type_regist" class="form-control cv_form-control"style="padding:0px;">
+                            <option value="" selected>-- สถานะของคุณ --</option>
+                            <option value="student">นักเรียน / นักศึกษา</option>
+                            <option value="teacher">ครู / บุคลากรวิทยาลัย </option>
+                            <option value="guest">สมากชิกทั่วไป / อื่นๆ </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                	<div class="col-sm-12" align="center"><button type="submit" name="btn_regist" class="cv_btn btn_ok"><span class="glyphicon glyphicon-ok"></span> เลือก</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 
