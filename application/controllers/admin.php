@@ -34,7 +34,36 @@ public function __construct()
 	    $sql = "SELECT * FROM admin WHERE a_id = '$id'";
 		$rs= $this->db->query($sql);
 		$data['rs']= $rs->result_array();
+
+
+			$show= $rs->result();
+			$password=$show[0]->password;
+
 		$this->load->view('admin/Edit_Pass',$data);
+		if($this->input->post('submit')){
+			echo"<script language=\"JavaScript\">";
+			echo"alert('btnok')";
+			echo"</script>";
+			$oldPass=$this->input->post('old_pass');
+			$new_pass1=$this->input->post('new_pass1');
+			$new_pass2=$this->input->post('new_pass2');
+			 
+			if($chk1!=1 or $chk2 !=1){
+
+			echo"<script language=\"JavaScript\">";
+			echo"alert('กรุณตรวจสอบรหัสผ่านอีกครั้ง')";
+			echo"</script>";
+			}
+			if($chk1 ==1 or $chk2 ==1){
+
+			echo"<script language=\"JavaScript\">";
+			echo"alert('สำเร็จ')";
+			echo"</script>";
+		$SqlUp ="UPDATE admin SET password = '$password' Where a_id = '$id'";
+		 $this->db->query($SqlUp);
+			}
+
+		}
 	}
 	public function LogOut(){ 
 		$this->load->view('admin/LogOut');

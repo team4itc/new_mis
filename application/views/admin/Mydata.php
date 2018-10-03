@@ -49,7 +49,7 @@ include "top.php";
                             <td><?php ?></td>
                           </tr>
                          <?php
-  						echo anchor('welcome/Edit_Pass/'.$r['a_id'],"ChangePassword");
+  						echo anchor('admin/Edit_Pass/'.$r['a_id'],"ChangePassword");
                        }
                          ?>
                           

@@ -30,29 +30,25 @@ include "top.php";
               <div class="panel-wrapper collapse in">
                 <div class="panel-body">
                   <div class="table-wrap">
-                    <div class="table-responsive">
+                    <div class="table-responsive"><form method="post" action="">
                       <table id="datable_1" class="table table-hover display  pb-30" >
                         <thead>
                           <tr>
-                            <th>ชื่อจริง</th>
-                            <th>นามสกุล</th>
+                            <th>รหัสผ่านเดิม</th>
+                            <th>รหัสผ่านใหม่</th>
+                            <th>ยืนยันหัสผ่านใหม่</th>
                           </tr>
                         </thead> 
                         <tbody>
-                        <?php
-                          foreach ($rs as $r) {
-                            ?>
                           <tr>
-                            <td><?php echo $r['a_fname']; ?></td>
-                            <td><?php echo $r['a_lname'];?></td>
-                          </tr>
-                         <?php
-  						echo anchor('admin/Edit_Pass/'.$r['a_id'],"เปลี่ยนรหัสผ่าน");
-                       }
-                         ?>
+                            <td><input type="text" name="old_pass"></td>
+                            <td><input type="text" name="new_pass1"></td>
+                            <td><input type="text" name="new_pass2"></td>
+                          <td><input type="submit" name="submit" ></td>
+  						</tr>
                           
                         </tbody>
-                      </table>
+                      </table></form>
                     </div>
                   </div>
                 </div>
